@@ -29,7 +29,6 @@
  * **/
 import React, { lazy } from 'react'//路由懒加载
 import Layout from '@/layout'
-// import About from '@/views/About/About'
 const Home = lazy(() => import("@/views/Home/Home"))
 const Login = lazy(() => import("@/views/Login/Login"))
 

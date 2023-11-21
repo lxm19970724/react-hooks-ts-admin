@@ -1,5 +1,5 @@
 //模块化引入样式
-import styles from './index.module.scss'
+import styles from './Home.module.scss'
 
 const Home = () => {
     return (
