@@ -1,16 +1,21 @@
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import HeaderComponent from "./components/Header";
+import FooterComponent from "./components/Footer";
+import Slider from "./components/Slider"
+import ContentComponent from "./components/Content"
 
-import { Outlet } from 'react-router-dom'
+import { Layout } from "antd";
 
-const Layout = () => {
-    return (
-        <div className="layout">
-            <Header />
-            <Outlet />
-            <Footer />
-        </div>
-    )
-}
+const LayoutComponent = () => {
+  return (
+    <Layout style={{height:"100%"}}>
+      <Slider/>
+      <Layout>
+        <HeaderComponent />
+        <ContentComponent />
+        <FooterComponent />
+      </Layout>
+    </Layout>
+  );
+};
 
-export default Layout
+export default LayoutComponent;
