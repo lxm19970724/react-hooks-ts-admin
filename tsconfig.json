@@ -25,6 +25,7 @@
         "src/*"
       ]
     },
+    "ignoreDeprecations": "5.0",
     "suppressImplicitAnyIndexErrors": true
   },
   "include": [
